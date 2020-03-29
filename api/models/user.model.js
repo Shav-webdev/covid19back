@@ -49,11 +49,12 @@ const usersSchema = new Schema({
   },
   temperature: {
     type: Number,
-    min: [33, temperatureMin],
-    max: [45, temperatureMax],
+    min: [30, temperatureMin],
+    max: [50, temperatureMax],
     validate: {
       validator: function (v) {
-        return !(v <= 33 && v >= 45);
+        const isNumeric = v => /^-{0,1}\d*\.{0,1}\d+$/.test(v);
+        return isNumeric(v) && v >= 30 && v <= 50;
       },
       message: temperatureRegexp,
     },
