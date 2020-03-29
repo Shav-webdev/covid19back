@@ -1,0 +1,25 @@
+{
+  "name": "covid19.api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2",
+    "body-parser": "latest",
+    "node-env-run": "^3.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "prettier": "2.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
