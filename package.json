@@ -11,12 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "latest",
+    "cors": "^2.8.5",
     "express": "latest",
     "mongoose": "^5.9.6",
-    "nodemon": "^2.0.2",
-    "body-parser": "latest",
+    "morgan": "^1.10.0",
     "node-env-run": "^3.0.2",
-    "morgan": "^1.10.0"
+    "nodemon": "^2.0.2"
   },
   "devDependencies": {
     "prettier": "2.0.2",
