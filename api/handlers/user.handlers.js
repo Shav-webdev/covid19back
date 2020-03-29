@@ -40,7 +40,7 @@ module.exports.getUsers = async (req, res) => {
                         coordinates: userLocation,
                     },
                     $minDistance: 10,
-                    $maxDistance: 1000,
+                    $maxDistance: 50000,
                 },
             },
         })
